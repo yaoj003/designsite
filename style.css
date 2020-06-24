@@ -11,15 +11,11 @@ html {
   margin: 0px;
   background-color: #F2F2F2;
   font-size: 18px;
-     cursor: url("https://cdn.glitch.com/4154bd98-c21d-4bf8-bdd0-3cff0c2d33ff%2Fcursor2.svg?v=1587491668618"),
-    auto;
 }
 
 a {
   text-decoration: none;
   color: black;
-     cursor: url("https://cdn.glitch.com/4154bd98-c21d-4bf8-bdd0-3cff0c2d33ff%2Fcursor2.svg?v=1587491668618"),
-    auto;
 }
 
 .nav {
