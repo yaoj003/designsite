@@ -9,7 +9,7 @@ body,
 html {
   font-family: "agrandir", sans-serif;
   margin: 0px;
-  background-color: #F2F2F2;
+  background-color: white;
   font-size: 18px;
 }
 
@@ -30,7 +30,7 @@ a {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   padding: 10px 72px 10px 72px;
-  background-color: #8BDAAA;
+  background-color: white;
 }
 
 .intro {
@@ -50,7 +50,7 @@ a {
   border-right: 1px solid black;
   padding: 20px 72px 20px 72px;
   font-size: 24px;
-  background-color: #8BDAAA;
+  background-color: white;
 }
 
 .project-header {
@@ -71,7 +71,7 @@ a {
 }
 
 .work:hover {
-  background: rgba(139, 218, 171, 0.2);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .work:hover img {
@@ -133,7 +133,7 @@ a {
   border-top: 1px solid black;
   margin-top: 50px;
   padding: 30px 72px 30px 72px;
-  background-color: #8BDAAA;
+  background-color: white;
 }
 
 .social-media {
