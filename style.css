@@ -9,7 +9,7 @@ body,
 html {
   font-family: "agrandir", sans-serif;
   margin: 0px;
-  background-color: white;
+  background-color: #F2F2F2;
   font-size: 18px;
 }
 
@@ -30,7 +30,7 @@ a {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   padding: 10px 72px 10px 72px;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .intro {
@@ -50,7 +50,7 @@ a {
   border-right: 1px solid black;
   padding: 20px 72px 20px 72px;
   font-size: 24px;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .project-header {
