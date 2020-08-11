@@ -129,11 +129,17 @@ a {
   transform: rotate(20deg);
 }
 
+.luna-small {
+  padding-left: 10%;
+  padding-top: 5%;
+  transform: rotate(20deg);
+}
+
 .footer {
   border-top: 1px solid black;
   margin-top: 50px;
   padding: 30px 72px 30px 72px;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .social-media {
