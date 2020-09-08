@@ -9,8 +9,8 @@ body,
 html {
   font-family: "agrandir", sans-serif;
   margin: 0px;
-  background-color: #F2F2F2;
-  font-size: 18px;
+  background-color: #F3F3F3;
+  font-size: 20px;
 }
 
 a {
@@ -29,13 +29,13 @@ a {
   flex: 50%;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  padding: 10px 72px 10px 72px;
-  background-color: #F2F2F2;
+  padding: 10px 100px 10px 100px;
+  background-color: #F3F3F3;
 }
 
 .intro {
   font-size: 54px;
-  padding: 80px 72px 20px 72px;
+  padding: 80px 100px 40px 100px;
 }
 
 .cr {
@@ -43,103 +43,53 @@ a {
 }
 
 .contact {
-  display: flex;
   flex: 50%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
-  padding: 20px 72px 20px 72px;
-  font-size: 24px;
-  background-color: #F2F2F2;
+  padding: 15px 100px 12px 100px;
+  font-size: 20px;
 }
 
 .project-header {
   font-size: 54px;
-  padding: 40px 72px 20px 72px;
+  padding: 40px 100px 20px 100px;
 }
 
 .home-projects {
   display: flex;
-  margin: 0px 62px 20px 62px;
+  margin: 0px 80px 40px 80px;
 }
 
 .work {
-  display: flex;
   flex: 50%;
-  margin: 0px 10px 0px 10px;
+  margin: 0px 20px 0px 20px;
   border: 1px solid black;
+  padding: 0 none;
 }
 
 .work:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .work:hover img {
   opacity: 0.5;
 }
 
-.work-a {
-  width: 50%;
-  border-right: 1px solid black;
-  padding: none;
-}
-
-.work-a1 {
+.title {
+  font-size: 54px;
+  padding: 10px 0px 10px 40px;
   border-bottom: 1px solid black;
-  font-size: 24px;
-  padding: 30px 0px 30px 30px;
-  margin: 0 none;
 }
 
-.work-a2 {
-  height: 90px;
-  font-size: 18px;
-  padding: 30px 0px 0px 30px;
-}
-
-.work-b {
-  display: inline-block;
-  width: 50%;
-}
-
-.img {
-  width: 100%;
-}
-
-.smartie-small {
-  padding-left: 10%;
-}
-
-.zest-small {
-  padding-left: 15%;
-}
-
-.ladle-small {
-  padding-left: 20%;
-  padding-top: 20%;
-}
-
-.bee-small {
-  padding-left: 15%;
-}
-
-.bloom-small {
-  padding-left: 10%;
-  padding-top: 10%;
-  transform: rotate(20deg);
-}
-
-.luna-small {
-  padding-left: 10%;
-  padding-top: 5%;
-  transform: rotate(20deg);
+.work img {
+  display: block;
 }
 
 .footer {
   border-top: 1px solid black;
   margin-top: 50px;
-  padding: 30px 72px 30px 72px;
-  background-color: #F2F2F2;
+  padding: 20px 100px 20px 100px;
 }
 
 .social-media {
@@ -149,30 +99,30 @@ a {
 
 /* project pages */
 
-.project-title {
-  font-size: 50px;
-  padding: 80px 72px 20px 72px;
-  border-bottom: 1px solid black;
+.back {
+  top: 90px;
+  left: 100px;
+  position: fixed;
 }
 
 .project-intro {
   display: flex;
+  padding: 80px 100px 20px 100px;
+}
+
+.project-title {
+  flex: 30%;
+  font-size: 54px;
 }
 
 .project-type {
-  flex: 50%;
-  padding: 50px 150px 0px 150px;
-  font-size: 18px;
-}
-
-.project-type-2 {
-  flex: 50%;
-  padding: 50px 150px 0px 0px;
-  font-size: 18px;
+  flex: 70%;
+  padding: 0px 20px 0px 0px;
+  font-size: 20px;
 }
 
 .project-content {
-  padding: 60px 140px 0px 140px;
+  padding: 0px 100px 0px 100px;
   display: block;
 }
 
@@ -191,44 +141,10 @@ a {
   margin: 0px 10px 10px 10px;
 }
 
-
 @media only screen and (max-width: 1100px) {
-  .intro,
-  .project-header {
-    font-size: 48px;
+  body {
+    font-size: 20px;
   }
-
-  .contact {
-    font-size: 24px;
-    padding: 20px 20px 20px 72px;
-  }
-
-  .work-a1 {
-    font-size: 24px;
-    padding: 18px;
-  }
-
-  .work-a2 {
-    font-size: 18px;
-    padding: 18px;
-    height: 60px;
-  }
-
-  .project-title {
-    font-size: 48px;
-    padding: 80px 72px 20px 72px;
-  }
-
-  .project-type {
-    font-size: 18px;
-  }
-
-  .project-content {
-    padding: 30px 62px 0px 62px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
   .col {
     padding: 10px 50px 10px 50px;
   }
@@ -250,8 +166,14 @@ a {
   .contact {
     display: block;
     padding: 20px 20px 20px 50px;
-    font-size: 24px;
+    font-size: 20px;
     margin-top: -1px;
+  }
+  #resume {
+    padding-left: 50px;
+  }
+  .contact img {
+    width: 16px;
   }
 
   .home-projects {
@@ -263,34 +185,23 @@ a {
     margin: 0px 0px 20px 0px;
   }
 
-  .work-a1 {
-    font-size: 24px;
-  }
-
-  .work-a2 {
-    font-size: 18px;
-  }
-
-  .project-intro {
-    display: block;
+  .title {
+    font-size: 36px;
+    padding: 20px 0px 20px 40px;
   }
 
   .project-title {
-    font-size: 36px;
-    padding: 60px 50px 10px 50px;
+    font-size: 42px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .project-intro {
+    padding: 80px 50px 0px 40px;
   }
 
   .project-type {
-    font-size: 18px;
-    padding: 20px 50px 20px 50px;
-    margin-top: -1px;
-    background-color: #F2F2F2;
-  }
-
-  .project-type2 {
-    margin-top: -1px;
-    background-color: #F2F2F2;
-    padding: 20px 50px 20px 50px;
+    padding: 0px none;
+    font-size: 20px;
   }
 
   .project-content {
@@ -304,18 +215,22 @@ a {
   .footer {
     border-top: 1px solid black;
     margin-top: 30px;
-    padding: 20px 50px 20px 50px;
+    padding: 10px 50px 10px 50px;
   }
 }
 
 @media only screen and (max-width: 550px) {
+  body {
+    font-size: 14px;
+  }
+
   .intro {
-    font-size: 24px;
-    padding: 60px 20px 10px 20px;
+    font-size: 20px;
+    padding: 50px 20px 10px 20px;
   }
 
   .project-header {
-    font-size: 24px;
+    font-size: 20px;
     padding: 20px 20px 10px 20px;
   }
 
@@ -326,8 +241,20 @@ a {
   .contact {
     display: block;
     padding: 10px 20px 10px 20px;
-    font-size: 18px;
+    font-size: 14px;
     margin-top: -1px;
+  }
+
+  #hi {
+    padding-left: 20px;
+  }
+
+  #resume {
+    padding-left: 20px;
+  }
+
+  .contact img {
+    width: 9px;
   }
 
   .home-projects {
@@ -335,30 +262,23 @@ a {
     display: block;
   }
 
+  .title {
+    font-size: 20px;
+    padding: 10px 0px 10px 15px;
+  }
+
   .project-title {
     font-size: 36px;
+    padding: 0px none;
+  }
+
+  .project-intro {
     padding: 60px 20px 10px 20px;
-  }
-
-  .work-a1 {
-    font-size: 20px;
-    padding: 15px 0px 15px 20px;
-  }
-
-  .work-a2 {
-    font-size: 14px;
+    display: inline-block;
   }
 
   .project-type {
-    font-size: 16px;
-    padding: 0px 20px 10px 20px;
-  }
-
-  .project-type-2 {
-    font-size: 16px;
-    margin-top: -1px;
-    background-color: #F2F2F2;
-    padding: 10px 20px 10px 20px;
+    font-size: 14px;
   }
 
   .project-content {
@@ -370,15 +290,13 @@ a {
     margin-top: 10px;
     padding: 10px 20px 10px 20px;
   }
-  
-  .social-media{
-    display:none;
+
+  .social-media {
+    display: none;
   }
-  
+
   .ladle-small {
-  padding-left: 20%;
-  padding-top: 0%;
-}
-  
-  
+    padding-left: 20%;
+    padding-top: 0%;
+  }
 }
