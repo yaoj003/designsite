@@ -1,16 +1,23 @@
 /* CSS files add styling rules to your content */
 
 @font-face {
-  font-family: "agrandir";
-  src: url("https://cdn.glitch.com/48148101-fd03-4307-bb35-8b499426094f%2FAgrandir-WideLight.otf?v=1585937971765");
+  font-family: "object-bold";
+  src: url("https://cdn.glitch.com/5db4f9c1-78f2-411b-a350-d8f74d28afa5%2FObjectSans-Bold.otf?v=1599614179872");
+}
+
+@font-face {
+  font-family: "object-reg";
+  src: url("https://cdn.glitch.com/5db4f9c1-78f2-411b-a350-d8f74d28afa5%2FObjectSans-Regular.otf?v=1599602582509");
+  -webkit-font-smoothing: antialiased;
 }
 
 body,
 html {
-  font-family: "agrandir", sans-serif;
+  font-family: "object-reg", sans-serif;
   margin: 0px;
   background-color: #F3F3F3;
   font-size: 20px;
+  line-height: 1.2;
 }
 
 a {
@@ -18,24 +25,29 @@ a {
   color: black;
 }
 
-.nav {
-  display: flex;
-  width: 100%;
-  position: fixed;
-  z-index: 999;
+b {
+  font-family: "object-bold", sans-serif;
 }
 
-.col {
-  flex: 50%;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  padding: 10px 100px 10px 100px;
-  background-color: #F3F3F3;
+.logo {
+  padding: 20px 100px 12px 100px;
+  position: fixed;
+}
+
+.nav {
+  position: fixed;
+  right: 100px;
+  top: 20px;
+  display: flex;
+}
+
+.nav-1 {
+  padding-left: 100px;
 }
 
 .intro {
   font-size: 54px;
-  padding: 80px 100px 40px 100px;
+  padding: 80px 100px 50px 100px;
 }
 
 .cr {
@@ -44,11 +56,10 @@ a {
 
 .contact {
   flex: 50%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  padding: 15px 100px 12px 100px;
-  font-size: 20px;
+  padding: 20px 100px 20px 100px;
+  font-size: 35px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
 }
 
 .project-header {
@@ -64,12 +75,8 @@ a {
 .work {
   flex: 50%;
   margin: 0px 20px 0px 20px;
-  border: 1px solid black;
-  padding: 0 none;
-}
 
-.work:hover {
-  background: rgba(0, 0, 0, 0.1);
+  padding: 0 none;
 }
 
 .work:hover img {
@@ -78,8 +85,7 @@ a {
 
 .title {
   font-size: 54px;
-  padding: 10px 0px 10px 40px;
-  border-bottom: 1px solid black;
+  padding: 15px 0px 10px 00px;
 }
 
 .work img {
@@ -87,9 +93,9 @@ a {
 }
 
 .footer {
-  border-top: 1px solid black;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 20px 100px 20px 100px;
+  border-top: 1px solid;
 }
 
 .social-media {
@@ -107,7 +113,7 @@ a {
 
 .project-intro {
   display: flex;
-  padding: 80px 100px 20px 100px;
+  padding: 80px 100px 70px 100px;
 }
 
 .project-title {
@@ -117,12 +123,13 @@ a {
 
 .project-type {
   flex: 70%;
-  padding: 0px 20px 0px 0px;
+  padding: none;
   font-size: 20px;
+  line-height: 1.3;
 }
 
 .project-content {
-  padding: 0px 100px 0px 100px;
+  padding: 0px 90px 0px 90px;
   display: block;
 }
 
@@ -145,12 +152,25 @@ a {
   body {
     font-size: 20px;
   }
-  .col {
-    padding: 10px 50px 10px 50px;
+
+  .logo {
+    padding: 20px 50px 20px 50px;
+    position: fixed;
+  }
+
+  .nav {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    display: flex;
+  }
+
+  .nav-1 {
+    padding-left: 50px;
   }
 
   .intro {
-    padding: 70px 50px 20px 50px;
+    padding: 80px 50px 40px 50px;
     font-size: 36px;
   }
 
@@ -168,6 +188,7 @@ a {
     padding: 20px 20px 20px 50px;
     font-size: 20px;
     margin-top: -1px;
+    border-top: 1px solid;
   }
   #resume {
     padding-left: 50px;
@@ -182,12 +203,12 @@ a {
   }
 
   .work {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 40px 0px;
   }
 
   .title {
     font-size: 36px;
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0px 20px 0px;
   }
 
   .project-title {
@@ -196,7 +217,7 @@ a {
   }
 
   .project-intro {
-    padding: 80px 50px 0px 40px;
+    padding: 80px 50px 0px 50px;
   }
 
   .project-type {
@@ -213,35 +234,46 @@ a {
   }
 
   .footer {
-    border-top: 1px solid black;
     margin-top: 30px;
-    padding: 10px 50px 10px 50px;
+    padding: 0px 50px 10px 50px;
   }
 }
 
 @media only screen and (max-width: 550px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .intro {
-    font-size: 20px;
-    padding: 50px 20px 10px 20px;
+    font-size: 24px;
+    padding: 70px 20px 40px 20px;
   }
 
   .project-header {
-    font-size: 20px;
+    font-size: 24px;
     padding: 20px 20px 10px 20px;
   }
 
-  .col {
-    padding: 10px 20px 10px 20px;
+  .logo {
+    padding: 20px 20px 20px 20px;
+    position: fixed;
+  }
+
+  .nav {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+  }
+
+  .nav-1 {
+    padding-left: 50px;
   }
 
   .contact {
     display: block;
     padding: 10px 20px 10px 20px;
-    font-size: 14px;
+    font-size: 16px;
     margin-top: -1px;
   }
 
@@ -263,12 +295,12 @@ a {
   }
 
   .title {
-    font-size: 20px;
-    padding: 10px 0px 10px 15px;
+    font-size: 34px;
+    padding: 10px 0px 10px 0px;
   }
 
   .project-title {
-    font-size: 36px;
+    font-size: 34px;
     padding: 0px none;
   }
 
@@ -279,6 +311,7 @@ a {
 
   .project-type {
     font-size: 14px;
+    padding-top: 10px;
   }
 
   .project-content {
@@ -286,7 +319,6 @@ a {
   }
 
   .footer {
-    border-top: 1px solid black;
     margin-top: 10px;
     padding: 10px 20px 10px 20px;
   }
