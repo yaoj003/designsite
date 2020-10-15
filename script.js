@@ -1,23 +1,23 @@
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-  var scrollTop = $(".scrollTop");
+//   var scrollTop = $(".scrollTop");
 
-  $(window).scroll(function() {
-    var topPos = $(this).scrollTop();
+//   $(window).scroll(function() {
+//     var topPos = $(this).scrollTop();
 
-    if (topPos > 520) {
-      $(scrollTop).addClass('active');
-    } else {
-      $(scrollTop).removeClass('active');
-    }
-  }); 
+//     if (topPos > 520) {
+//       $(scrollTop).addClass('active');
+//     } else {
+//       $(scrollTop).removeClass('active');
+//     }
+//   }); 
 
-  $(scrollTop).click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 2000);
-  }); 
+//   $(scrollTop).click(function() {
+//     $('html, body').animate({
+//       scrollTop: 0
+//     }, 2000);
+//   }); 
 
-}); 
+// }); 
