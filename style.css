@@ -34,7 +34,7 @@ a {
   color: black;
 }
 
-.nav-bar{
+.nav-bar {
   background-color: white;
   position: fixed;
   z-index: 999;
@@ -184,7 +184,6 @@ a.about {
   padding-right: 100px;
 }
 
-
 .project-type {
   flex: 50%;
   padding-top: 5px;
@@ -223,13 +222,18 @@ a.about {
   margin: 10px 15px 15px 15px;
 }
 
+.full-img-sm {
+  display: block;
+  margin: 10px 15px 15px 15px;
+}
+
 .half-img {
   flex: 50%;
   height: auto;
   margin: 15px 15px 15px 15px;
 }
 
-.caption{
+.caption {
   margin: 30px 15px 15px 15px;
   font-size: 25px;
 }
@@ -261,8 +265,8 @@ a.about {
 
  */
 
-.scrollTop{
-  display:none;
+.scrollTop {
+  display: none;
 }
 /* back */
 
@@ -351,6 +355,13 @@ a.about {
     padding: 0px 0px 0px 0px;
   }
 
+  #project-subhead {
+    padding-top: 5px;
+    font-size: 18px;
+    line-height: 1.2;
+    padding-right: 0px;
+  }
+
   .project-intro {
     padding: 80px 50px 0px 50px;
   }
@@ -363,16 +374,15 @@ a.about {
   .project-content {
     padding: 30px 40px 0px 40px;
   }
-  
-  .caption{
-  margin: 30px 15px 15px 15px;
-  font-size: 20px;
-}
-  
-  #project-subhead{
+
+  .caption {
+    margin: 30px 15px 15px 15px;
     font-size: 20px;
   }
-  
+
+  #project-subhead {
+    font-size: 20px;
+  }
 
   .half-img-container {
     display: block;
@@ -392,26 +402,27 @@ a.about {
 @media only screen and (max-width: 600px) {
   body {
     font-size: 16px;
+    overflow-x: hidden;
   }
 
   .intro {
-    font-size: 26px;
-    padding: 65px 20px 35px 20px;
+    font-size: 24px;
+    padding: 65px 25px 35px 25px;
   }
 
   #intro-small {
-    font-size: 26px;
-    padding: 65px 20px 20px 20px;
+    font-size: 24px;
+    padding: 65px 25px 20px 25px;
   }
 
   .logo {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 25px 20px 25px;
     position: fixed;
   }
 
   .nav {
     position: fixed;
-    right: 20px;
+    right: 25px;
     top: 20px;
     display: flex;
   }
@@ -421,17 +432,17 @@ a.about {
   }
 
   .contact-1 {
-    padding: 12px 0px 12px 20px;
-    font-size: 26px;
+    padding: 12px 0px 12px 25px;
+    font-size: 24px;
   }
 
   .contact-2 {
-    padding: 12px 50px 12px 20px;
-    font-size: 26px;
+    padding: 12px 50px 12px 25px;
+    font-size: 24px;
   }
 
   .contact-about {
-    padding: 12px 0px 12px 20px;
+    padding: 12px 0px 12px 25px;
     font-size: 26px;
     border-top: 1px solid;
   }
@@ -443,13 +454,13 @@ a.about {
   .cr-about img {
     width: 18px;
   }
-  
-  .projects{
+
+  .projects {
     padding-top: 50px;
   }
 
   .home-projects {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 25px 0px 25px;
   }
 
   .title {
@@ -458,21 +469,31 @@ a.about {
   }
 
   .project-intro {
-    padding: 65px 20px 10px 20px;
+    padding: 65px 25px 10px 25px;
     display: inline-block;
   }
 
   .project-type {
     font-size: 16px;
-    padding-top: 10px;
+    padding-top: 25px;
   }
 
   .project-content {
-    padding: 10px 10px 0px 10px;
+    padding: 5px;
   }
-  
+
   .project-title {
-    font-size: 26px;
+    font-size: 45px;
+  }
+
+  #project-subhead {
+    font-size: 16px;
+    padding-bottom: 25px;
+    border-bottom: 0.7px black solid;
+  }
+
+  .caption {
+    font-size: 16px;
   }
 
   .details {
@@ -487,24 +508,15 @@ a.about {
 
   .footer {
     margin-top: 0px;
-    padding: 12px 20px 20px 20px;
+    padding: 12px 25px 20px 25px;
   }
 
   .back {
-    padding: 10px 20px 20px 20px;
+    padding: 10px 25px 20px 25px;
   }
 
-  /* scroll top */
-
-  .scrollTop {
-    position: fixed;
-    right: 12px;
-    bottom: 20px;
-    height: 40px;
-    width: 40px;
+  .full-img-sm {
+    margin: 0px -5px 0px -5px;
   }
 
-  .scrollTop img {
-    height: 40px;
-  }
 }
