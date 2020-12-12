@@ -143,6 +143,19 @@ a.about {
   opacity: 0.5;
 }
 
+#zest{
+  font-size: 35px;
+  margin: 0;
+  display: flex;
+ justify-content: center;
+  display: flex;
+}
+
+.work:hover #zest {
+ opacity: 1;
+}
+
+
 .title {
   font-size: 60px;
   padding: 15px 0px 10px 0px;
